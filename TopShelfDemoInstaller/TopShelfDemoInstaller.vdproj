@@ -15,44 +15,44 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_00DA678741A546C6A89B7C6671B10DA6"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_44D3F90A514C4E13906355B85FFC23E9"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_72CD2EF3D9B7EB40ABE70FFDB7D5536C"
-        "OwnerKey" = "8:_E993AD15D2914E618B5EECC341EA21DD"
+        "OwnerKey" = "8:_44D3F90A514C4E13906355B85FFC23E9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_B757944C4A0119F8707D2139D585E582"
-        "OwnerKey" = "8:_E993AD15D2914E618B5EECC341EA21DD"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_C60587F1EAEE487C8A5AFFB76F42AF42"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_E993AD15D2914E618B5EECC341EA21DD"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E993AD15D2914E618B5EECC341EA21DD"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_B757944C4A0119F8707D2139D585E582"
+        "MsmKey" = "8:_72CD2EF3D9B7EB40ABE70FFDB7D5536C"
+        "OwnerKey" = "8:_00DA678741A546C6A89B7C6671B10DA6"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_72CD2EF3D9B7EB40ABE70FFDB7D5536C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_00DA678741A546C6A89B7C6671B10DA6"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_44D3F90A514C4E13906355B85FFC23E9"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -119,46 +119,32 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_8682C560FBD14496B61BD87F510BE676"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_79EA5281DDB245109BCA26A6FF4EAAE2"
             {
-            "Name" = "8:Primary output from MyWindowsSerivce (Active)"
+            "Name" = "8:Primary output from InstallationProject (Active)"
             "Condition" = "8:"
-            "Object" = "8:_E993AD15D2914E618B5EECC341EA21DD"
+            "Object" = "8:_44D3F90A514C4E13906355B85FFC23E9"
             "FileType" = "3:2"
             "InstallAction" = "3:1"
             "Arguments" = "8:"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_BFA70D68_1766_47BB_BC17_405F473425D8"
+            "Identifier" = "8:_1650A4D0_19FE_4288_8477_9CDF2DFB63BB"
             "InstallerClass" = "11:TRUE"
             "CustomActionData" = "8:"
             }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_9E6F94D8467D478C950A657CA9628697"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_AC3F8E0EFCE44025A3891795FDE32E7A"
             {
-            "Name" = "8:Primary output from MyWindowsSerivce (Active)"
+            "Name" = "8:Primary output from UninstallationProject (Active)"
             "Condition" = "8:"
-            "Object" = "8:_E993AD15D2914E618B5EECC341EA21DD"
+            "Object" = "8:_00DA678741A546C6A89B7C6671B10DA6"
             "FileType" = "3:2"
             "InstallAction" = "3:4"
             "Arguments" = "8:"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_88D45172_E8E2_4A04_84A0_FA660785B1DA"
+            "Identifier" = "8:_8AD9025E_3D86_4EE9_B43D_F90AA324B6FB"
             "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_A50602CFD10042C5835F2AC5EA8D87F0"
-            {
-            "Name" = "8:InstallationScript.vbs"
-            "Condition" = "8:"
-            "Object" = "8:_C60587F1EAEE487C8A5AFFB76F42AF42"
-            "FileType" = "3:4"
-            "InstallAction" = "3:1"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:2"
-            "Identifier" = "8:_E70012D3_FBF7_4872_8989_C03B33B55947"
-            "InstallerClass" = "11:FALSE"
             "CustomActionData" = "8:"
             }
         }
@@ -213,57 +199,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B757944C4A0119F8707D2139D585E582"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Topshelf, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b800c4cfcdeea87b, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_B757944C4A0119F8707D2139D585E582"
-                    {
-                    "Name" = "8:Topshelf.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Topshelf.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_482E17633D624EE59D7432D2654B35B1"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C60587F1EAEE487C8A5AFFB76F42AF42"
-            {
-            "SourcePath" = "8:..\\MyWindowsSerivce\\bin\\Debug\\InstallationScript.vbs"
-            "TargetName" = "8:InstallationScript.vbs"
-            "Tag" = "8:"
-            "Folder" = "8:_482E17633D624EE59D7432D2654B35B1"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -323,7 +258,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:TopShelfDemoInstaller"
         "ProductCode" = "8:{5445940B-F44E-4013-900D-64CE0F683EFF}"
-        "PackageCode" = "8:{0848812A-7F2C-4DE0-BF07-9DCF041D0AB9}"
+        "PackageCode" = "8:{E4F8870A-8DA2-4264-A2F5-22827B150998}"
         "UpgradeCode" = "8:{CE0E1EAE-E058-4A52-81F2-B04B270C84CA}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -842,9 +777,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_E993AD15D2914E618B5EECC341EA21DD"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_00DA678741A546C6A89B7C6671B10DA6"
             {
-            "SourcePath" = "8:..\\MyWindowsSerivce\\obj\\Debug\\MyWindowsSerivce.exe"
+            "SourcePath" = "8:..\\UninstallationProject\\obj\\Debug\\UninstallationProject.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_482E17633D624EE59D7432D2654B35B1"
@@ -864,7 +799,63 @@
             "ProjectOutputGroupRegister" = "3:1"
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{52E36886-D01D-4983-8F86-E1B3D2C56A17}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_20F29091009B4092A15F0AADE1C97312"
+            {
+            "SourcePath" = "8:"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_482E17633D624EE59D7432D2654B35B1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:SourceFiles"
             "OutputProjectGuid" = "8:{9AD9006A-51F6-4F8E-9094-C53F8494DEEA}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_44D3F90A514C4E13906355B85FFC23E9"
+            {
+            "SourcePath" = "8:..\\InstallationProject\\obj\\Debug\\InstallationProject.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_482E17633D624EE59D7432D2654B35B1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{F5AF3051-7B2E-466B-84FD-CF78707FE925}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
                 {

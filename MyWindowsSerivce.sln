@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWindowsService", "MyWindo
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TopShelfDemoInstaller", "TopShelfDemoInstaller\TopShelfDemoInstaller.vdproj", "{4AE46CCC-5AAF-49C2-863E-FDFEB8E40F99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstallationProject", "InstallationProject\InstallationProject.csproj", "{F5AF3051-7B2E-466B-84FD-CF78707FE925}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UninstallationProject", "UninstallationProject\UninstallationProject.csproj", "{52E36886-D01D-4983-8F86-E1B3D2C56A17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{9AD9006A-51F6-4F8E-9094-C53F8494DEEA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4AE46CCC-5AAF-49C2-863E-FDFEB8E40F99}.Debug|Any CPU.ActiveCfg = Debug
 		{4AE46CCC-5AAF-49C2-863E-FDFEB8E40F99}.Release|Any CPU.ActiveCfg = Release
+		{F5AF3051-7B2E-466B-84FD-CF78707FE925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5AF3051-7B2E-466B-84FD-CF78707FE925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5AF3051-7B2E-466B-84FD-CF78707FE925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5AF3051-7B2E-466B-84FD-CF78707FE925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52E36886-D01D-4983-8F86-E1B3D2C56A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E36886-D01D-4983-8F86-E1B3D2C56A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E36886-D01D-4983-8F86-E1B3D2C56A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E36886-D01D-4983-8F86-E1B3D2C56A17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
