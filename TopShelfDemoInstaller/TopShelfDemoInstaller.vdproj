@@ -27,14 +27,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_E993AD15D2914E618B5EECC341EA21DD"
+        "MsmKey" = "8:_C60587F1EAEE487C8A5AFFB76F42AF42"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_72CD2EF3D9B7EB40ABE70FFDB7D5536C"
+        "MsmKey" = "8:_E993AD15D2914E618B5EECC341EA21DD"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -47,6 +47,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_B757944C4A0119F8707D2139D585E582"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_72CD2EF3D9B7EB40ABE70FFDB7D5536C"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -67,6 +73,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -83,26 +105,20 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_4DACF0E502DB43689CCA161FE27E92B6"
-            {
-            "Name" = "8:Primary output from MyWindowsSerivce (Active)"
-            "Condition" = "8:"
-            "Object" = "8:_E993AD15D2914E618B5EECC341EA21DD"
-            "FileType" = "3:2"
-            "InstallAction" = "3:3"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_78BECAFA_C094_48B7_8440_53F40438FD30"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
-            }
             "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_8682C560FBD14496B61BD87F510BE676"
             {
             "Name" = "8:Primary output from MyWindowsSerivce (Active)"
@@ -131,18 +147,18 @@
             "InstallerClass" = "11:TRUE"
             "CustomActionData" = "8:"
             }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_CD9AFCED65BD445F893EF877E6B96797"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_A50602CFD10042C5835F2AC5EA8D87F0"
             {
-            "Name" = "8:Primary output from MyWindowsSerivce (Active)"
+            "Name" = "8:InstallationScript.vbs"
             "Condition" = "8:"
-            "Object" = "8:_E993AD15D2914E618B5EECC341EA21DD"
-            "FileType" = "3:2"
-            "InstallAction" = "3:2"
+            "Object" = "8:_C60587F1EAEE487C8A5AFFB76F42AF42"
+            "FileType" = "3:4"
+            "InstallAction" = "3:1"
             "Arguments" = "8:"
             "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_1AF22128_B128_4FED_A756_8A2346373700"
-            "InstallerClass" = "11:TRUE"
+            "Sequence" = "3:2"
+            "Identifier" = "8:_E70012D3_FBF7_4872_8989_C03B33B55947"
+            "InstallerClass" = "11:FALSE"
             "CustomActionData" = "8:"
             }
         }
@@ -230,6 +246,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C60587F1EAEE487C8A5AFFB76F42AF42"
+            {
+            "SourcePath" = "8:..\\MyWindowsSerivce\\bin\\Debug\\InstallationScript.vbs"
+            "TargetName" = "8:InstallationScript.vbs"
+            "Tag" = "8:"
+            "Folder" = "8:_482E17633D624EE59D7432D2654B35B1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -287,7 +323,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:TopShelfDemoInstaller"
         "ProductCode" = "8:{5445940B-F44E-4013-900D-64CE0F683EFF}"
-        "PackageCode" = "8:{DDACE650-42D5-463E-A407-DB9E6E04BE43}"
+        "PackageCode" = "8:{0848812A-7F2C-4DE0-BF07-9DCF041D0AB9}"
         "UpgradeCode" = "8:{CE0E1EAE-E058-4A52-81F2-B04B270C84CA}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

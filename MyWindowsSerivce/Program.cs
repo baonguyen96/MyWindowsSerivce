@@ -22,34 +22,30 @@ namespace MyWindowsSerivce
                     s.WhenStarted(tc => tc.Start());                         
                     s.WhenStopped(tc => tc.Stop());                          
                 });
-                x.RunAsLocalSystem();                                       
 
+                x.RunAsLocalSystem();                                       
+       
                 x.SetDescription("Sample Topshelf Host");                   
                 x.SetDisplayName("TopShelf");                                  
                 x.SetServiceName("TopShelf");
-
-//                x.BeforeInstall(settings =>
-//                {
-//                    Console.WriteLine("before install");
-//                    RunCmdCommand("install");
-//                });
-
-
-                x.AfterInstall(settings =>
-                {
-                    Console.WriteLine("after install");
-                    RunCmdCommand("start");
-                });
                 
 
-                x.BeforeUninstall(() =>
-                {
-                    Console.WriteLine("before uninstall");
-                    RunCmdCommand("stop");
-                });
+                // since we will call the vbs (it then calls this exe with correct parameters) we dont need the following codes:
 
-                Console.WriteLine("set start auto");
-                x.StartAutomatically();
+//                x.AfterInstall(settings =>
+//                {
+//                    Console.WriteLine("after install");
+//                    RunCmdCommand("start");
+//                });
+//                
+//
+//                x.BeforeUninstall(() =>
+//                {
+//                    Console.WriteLine("before uninstall");
+//                    RunCmdCommand("stop");
+//                });
+//                
+//                x.StartAutomatically();
 
             });                                                             
 

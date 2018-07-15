@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWindowsSerivce", "MyWindowsSerivce\MyWindowsSerivce.csproj", "{9AD9006A-51F6-4F8E-9094-C53F8494DEEA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWindowsService", "MyWindowsSerivce\MyWindowsService.csproj", "{9AD9006A-51F6-4F8E-9094-C53F8494DEEA}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TopShelfDemoInstaller", "TopShelfDemoInstaller\TopShelfDemoInstaller.vdproj", "{4AE46CCC-5AAF-49C2-863E-FDFEB8E40F99}"
 EndProject
