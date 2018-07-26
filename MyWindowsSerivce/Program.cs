@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net.Mail;
 using Topshelf;
 
 namespace MyWindowsSerivce
@@ -13,67 +9,46 @@ namespace MyWindowsSerivce
     {
         static void Main(string[] args)
         {
-
-            var rc = HostFactory.Run(x =>                                 
+            try
             {
-                x.Service<TopShelfDemo>(s =>                                 
-                {
-                    s.ConstructUsing(name => new TopShelfDemo());                
-                    s.WhenStarted(tc => tc.Start());                         
-                    s.WhenStopped(tc => tc.Stop());                          
-                });
+//                if (!File.Exists(@"C:\Users\Bao\Documents\nonexist.txt"))
+//                {
+//                    throw new Exception("This should stop the service");
+//                }
 
-                x.RunAsLocalSystem();                                       
-       
-                x.SetDescription("Sample Topshelf Host");                   
-                x.SetDisplayName("TopShelf");                                  
-                x.SetServiceName("TopShelf");
                 
+                var rc = HostFactory.New(x =>
+                {
+                    x.Service<TopShelfDemo>(s =>
+                    {
+                        s.ConstructUsing(name => new TopShelfDemo());
+                        s.WhenStarted(tc => tc.Start());
+                        s.WhenStopped(tc => tc.Stop());
+                    });
 
-                // since we will call the vbs (it then calls this exe with correct parameters) we dont need the following codes:
+                    x.RunAsLocalSystem();
 
-//                x.AfterInstall(settings =>
-//                {
-//                    Console.WriteLine("after install");
-//                    RunCmdCommand("start");
-//                });
-//                
-//
-//                x.BeforeUninstall(() =>
-//                {
-//                    Console.WriteLine("before uninstall");
-//                    RunCmdCommand("stop");
-//                });
-//                
-//                x.StartAutomatically();
+                    x.SetDescription("Sample Topshelf Host");
+                    x.SetDisplayName("TopShelf");
+                    x.SetServiceName("TopShelf");
 
-            });                                                             
+                    x.StartAutomatically();
 
+                    x.OnException(ex =>
+                    {
+                        Console.WriteLine("TopShelf caught exception");
+                        Console.WriteLine(ex.Message);
+                    });
+                    
 
-            var exitCode = (int)Convert.ChangeType(rc, rc.GetTypeCode());  
-            Environment.ExitCode = exitCode;
-
-        }
-
-        private static void RunCmdCommand(string command)
-        {
-            System.Diagnostics.Process process = new System.Diagnostics.Process();
-            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
-            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-            startInfo.FileName = "cmd.exe";
-            startInfo.Arguments = $"/C ./MyWindowsService.exe {command}";
-            process.StartInfo = startInfo;
-            process.Start();
-            process.WaitForExit();
-
-            const string path = "./Command.txt";
-
-            using (StreamWriter sw = File.AppendText(path))
-            {
-                sw.WriteLine(command);
+                });
+                
+                rc.Run();
             }
-
+            catch(Exception e)
+            {
+                Console.WriteLine($"Catch exception '{e.Message}'");
+            }
         }
-
     }
 }
