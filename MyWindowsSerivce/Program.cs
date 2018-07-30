@@ -9,15 +9,15 @@ namespace MyWindowsSerivce
     {
         static void Main(string[] args)
         {
-            try
-            {
+//            try
+//            {
 //                if (!File.Exists(@"C:\Users\Bao\Documents\nonexist.txt"))
 //                {
 //                    throw new Exception("This should stop the service");
 //                }
 
                 
-                var rc = HostFactory.New(x =>
+                HostFactory.Run(x =>
                 {
                     x.Service<TopShelfDemo>(s =>
                     {
@@ -34,7 +34,7 @@ namespace MyWindowsSerivce
 
                     x.StartAutomatically();
 
-                    x.OnException(ex =>
+                    x.OnException((ex) =>
                     {
                         Console.WriteLine("TopShelf caught exception");
                         Console.WriteLine(ex.Message);
@@ -43,12 +43,11 @@ namespace MyWindowsSerivce
 
                 });
                 
-                rc.Run();
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine($"Catch exception '{e.Message}'");
-            }
+//            }
+//            catch(Exception e)
+//            {
+//                Console.WriteLine($"Catch exception '{e.Message}'");
+//            }
         }
     }
 }

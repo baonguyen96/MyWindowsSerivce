@@ -12,11 +12,11 @@ namespace MyWindowsSerivce
 
         public TopShelfDemo()
         {
-            _timer = new Timer(5000) {AutoReset = true};
+            _timer = new Timer(1000) {AutoReset = true};
             _timer.Elapsed += Log;
         }
 
-        private void Log(object sender, System.Timers.ElapsedEventArgs e)
+        private void Log(object sender, ElapsedEventArgs e)
         {
             const string path = @"C:\Users\Bao\Documents\Log.txt";
             Console.WriteLine($"Elapsed at {DateTime.Now}");
